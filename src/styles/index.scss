@@ -1,0 +1,20 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $roboto;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: $blue;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 80px;
+    overflow-x: hidden;
+}
+

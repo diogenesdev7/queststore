@@ -1,0 +1,117 @@
+@import 'variables';
+
+.show-cart {
+    visibility: visible !important;
+    right: 0 !important;
+}
+
+.cart {
+    .naoha {
+        padding: 25px;
+        width: 400px;
+    }
+
+    transition: ease-out .3s;
+    background-color: $white;
+    position: fixed;
+    top: 80px;
+    right: -500px;
+    visibility: hidden;
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0,0,0,.5);
+    max-height: 550px;
+    overflow-y: auto;
+    min-height: 530px;
+
+    
+    header {
+        position: sticky;
+        padding: 20px 20px 20px 20px;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        width: 400px;
+        display: block;
+        background-color: $white;
+        box-shadow: 0 1px 10px rgba(0,0,0,.1)
+    }
+
+    h3.preço {
+        font-size: 1.3rem;
+        margin: 0 0 20px 0;
+    }
+
+    div.img {
+        width: 120px;
+        height: 60px;
+        margin-bottom: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    h2 {
+        color: $black;
+        font-size: 1.1rem;
+        margin: 0;
+        text-align: start;
+    }
+
+    h3 {
+        margin-top: 8px;
+    }
+
+    div.buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        button {
+            background-color: transparent;
+            border: 1px solid $purple;
+            color: $orange;
+            border-radius: 5px;
+            width: 45%;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 5px;
+        }
+    }
+    
+    li {
+        margin: 20px  0;
+        border-bottom: 1px solid $purple;
+        padding: 0 25px 15px 25px;
+        gap: 100px;
+        position: relative;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    div.qtd {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.btns-qtd {
+        display: flex;
+        gap: 5px;
+        margin-top: 8px;
+
+        svg {
+            color: $orange;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

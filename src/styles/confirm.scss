@@ -1,0 +1,69 @@
+@import 'variables';
+
+.confirm-container {
+    background-color: rgba(0,0,0,.5);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    transition: ease-out .3s;
+}
+
+.confirm-msg {
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: rgb(127, 180, 48);
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-top: -15px;
+    }
+
+    button {
+        font-weight: 500;
+        font-size: 1.3rem;
+        padding: 5px 15px;
+        color: $purple;
+        margin: 25px auto 0 auto;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid $black;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: .3s;
+        cursor: pointer;
+
+        svg {
+            color: $orange;
+            animation: circle 2s 1s 3 alternate
+        }
+
+        @keyframes circle {
+            from {transform: rotate(0)}
+            to {transform: rotate(360deg)}
+        }
+    }
+
+    button:hover {
+        background-color: color-mix(in srgb, $lightblue, white 50%);
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+    }
+}
+
