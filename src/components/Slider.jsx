@@ -46,8 +46,8 @@ const Slider = ({ products }) => {
       >
         
         {products.map(item => {
-            return <SwiperSlide data-aos='zoom-in' className='slider-item' key={item.id}>
-                     <img data-aos='fade-right' src={item.img} alt={item.title} />
+            return <SwiperSlide className='slider-item' key={item.id}>
+                     <img src={item.img} alt={item.title} />
                      <div className="info">
                       <h3>{item.title}</h3>
                       <p>{formatCurrency(item.price)}</p>
