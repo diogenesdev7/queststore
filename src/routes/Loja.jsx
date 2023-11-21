@@ -3,7 +3,7 @@ import '../styles/loja.scss'
 import { useContext, useEffect } from "react"
 import { LojaContext } from "../context/LojaContext"
 
-import Slider from '../components/slider'
+import Slider from '../components/Slider'
 import Cart from '../components/Cart'
 import Confirm from '../components/Confirm'
 
